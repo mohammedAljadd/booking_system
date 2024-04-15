@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Centered Form</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  {% load static %}
+
+  <link rel="stylesheet" href="{% static 'authentication_app/style_login.css' %}">
+
+</head>
+<body >
+
+  {% include 'authentication_app\navbar.html' %}
+
+  <div class="container">
+    <div class="row justify-content-center align-items-center" style="min-height: 100vh;">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card-body">
+            <h5 class="card-title text-center">Account Login</h5><br>
+            <form method="post">
+              <div class="mb-3 d-flex justify-content-center">
+                <input type="text" class="form-control" id="username" name="username" placeholder="Username">
+              </div>
+              <div class="mb-3 d-flex justify-content-center">
+                <input type="password" class="form-control" id="password" name="password" placeholder="Password">
+              </div>
+              {% csrf_token %}
+              {% if messages %}
+                  {% for message in messages %}
+                      <span style="color: red">{{ message }}</span>
+                  {% endfor %}
+              {% endif %}
+
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary">Login Now</button>
+              </div>
+              
+            </form>
+            <div class="mt-3 text-end">
+              <a href="{% url 'reset_password' %}">Forget password?</a>
+            </div>
+  
+            <div class="row justify-content-center">
+              <div class="col-4">
+                <hr>
+              </div>
+              <div class="col-auto">
+                or
+              </div>
+              <div class="col-4">
+                <hr>
+              </div>
+            </div>
+  
+            <div class="mt-3 text-center">
+              <span>Are you new? </span> <a href="{% url 'register_user' %}">Create account</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+  
+
+<!-- Bootstrap Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+body{
+    background-image: linear-gradient(to right, rgb(221, 239, 244) , rgb(124, 219, 246)) !important;
+}
+
+.navbar {
+    background-image: linear-gradient(to right, #edeef8, #8e93f9);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.25);
+  }
+.card{
+    background-image: linear-gradient(to left, rgb(156, 231, 252) , rgb(61, 206, 246)) !important;
+}
+
+.form-control{
+    border-radius: 20px; /* Rounded corners */
+    width: 75%;
+    transition: width 0.45s;
+}
+
+
+.form-control:focus{
+    border-radius: 20px; /* Rounded corners */
+    width: 85%;
+}
+
+
+
+.btn-primary {
+    padding: 7px 13px; /* Padding */
+    border-radius: 25px; /* Rounded corners */
+  }
+
+
+  .line {
+    display: inline-block;
+    width: 100px; /* Adjust the width of the line */
+    border-top: 1px solid #000; /* Color and style of the line */
+    margin: 0 10px; /* Adjust the spacing around the line */
+  }
+
+
