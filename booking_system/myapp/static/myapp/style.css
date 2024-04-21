@@ -1,3 +1,7 @@
+body{
+  background-image: linear-gradient(to right, rgb(221, 239, 244) , rgb(124, 219, 246)) !important;
+}
+
 .navbar {
     background-image: linear-gradient(to right, #edeef8, #8e93f9);
     box-shadow: 0 2px 4px rgba(0,0,0,0.25);

@@ -1,0 +1,38 @@
+[
+    {
+      "model": "myapp.building",
+      "pk": 1,
+      "fields": {
+        "building_name": "Building_A"
+      }
+    },
+    {
+      "model": "myapp.building",
+      "pk": 2,
+      "fields": {
+        "building_name": "Building_B"
+      }
+    },
+    {
+      "model": "myapp.building",
+      "pk": 3,
+      "fields": {
+        "building_name": "Building_C"
+      }
+    },
+    {
+      "model": "myapp.building",
+      "pk": 4,
+      "fields": {
+        "building_name": "Building_D"
+      }
+    },
+    {
+      "model": "myapp.building",
+      "pk": 5,
+      "fields": {
+        "building_name": "Building_E"
+      }
+    }
+  ]
+  
